@@ -19,7 +19,7 @@ export class RecipeService{
 
     constructor(private shoppingListService: ShoppingListService){
     }
-    //comment
+    //getRecipes
     getRecipes(){
         return this.recipes.slice();
     }
