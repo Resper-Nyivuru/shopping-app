@@ -6,10 +6,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  //Its makes this event listenable to the parent component using the Output.
-  @Output() featureSelected = new EventEmitter<string>();
+  //option 1: Its makes this event listenable to the parent component using the Output.
+  // @Output() featureSelected = new EventEmitter<string>();
+  // onSelect(feature: string){
+  //   this.featureSelected.emit(feature);
+  // }
+
   
-  onSelect(feature: string){
-    this.featureSelected.emit(feature);
-  }
 }

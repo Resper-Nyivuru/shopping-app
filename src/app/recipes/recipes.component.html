@@ -4,12 +4,13 @@
         <!--(recipeWasSelected)="selectedRecipe = $event"-->
     </div>
     <div class="col-md-7">
-        <!--If the recipe is selected it should display the recipe details-->
+        <!-- option 1: without the routes: If the recipe is selected it should display the recipe details
         <app-recipe-detail
         *ngIf="selectedRecipe; else inforText" [recipe]="selectedRecipe"></app-recipe-detail>
-        <!--A local reference #inforText defined, needs to be implemented in ts file-->
+        A local reference #inforText defined, needs to be implemented in ts file
         <ng-template #inforText>
             <p>Please select a Recipe!</p>
-        </ng-template>
+        </ng-template> -->
+        <router-outlet></router-outlet>
     </div>
 </div>

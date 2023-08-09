@@ -1,11 +1,15 @@
 <!--Header component display-->
-<app-header (featureSelected)="onNavigate($event)"></app-header>
+<!--old navigation approach using ngIf-->
+<!-- <app-header (featureSelected)="onNavigate($event)"></app-header> -->
+<app-header></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h2>I'm working</h2>
-      <receipes-component *ngIf="loadedFeature === 'recipe'"></receipes-component>
-      <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
+      <!--It was used before implementing the routes-->
+      <!-- <receipes-component *ngIf="loadedFeature === 'recipe'"></receipes-component>
+      <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list> -->
+      <!--Loading the routes-->
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
