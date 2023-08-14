@@ -14,7 +14,7 @@ Open your command prompt or terminal and run the following command to install th
 ## 4. Navigate to Project Directory:
 Change your working directory to your project's root folder:
     cd my-angular-project
-## 5. nstall Project Dependencies:
+## 5. Install Project Dependencies:
 Run the following command to install the project dependencies listed in the package.json file:
     npm install
 ## 6. Development server
