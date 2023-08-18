@@ -1,0 +1,11 @@
+#base-form{
+    margin-top: 2%;
+}
+
+.btn.btn-success{
+    margin-right: 1%;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
