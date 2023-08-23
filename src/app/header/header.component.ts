@@ -17,13 +17,13 @@ export class HeaderComponent implements OnInit{
   ngOnInit(){
     //once the app loads, it fetches the recipes from the firebase database, it works but it's
     //commented out for now;
-    //this.dataStorageService.fetchRecipes();
+    this.dataStorageService.fetchRecipes().subscribe();
   }
 
   onSaveData(){
     this.dataStorageService.storeRecipes();
   }
   onFetchData(){
-    this.dataStorageService.fetchRecipes();
+    this.dataStorageService.fetchRecipes().subscribe();
   }
 }
